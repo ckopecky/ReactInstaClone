@@ -1,0 +1,58 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.insta-icon {
+    width: 50px;
+    margin: 30px;
+    border-right: 1px solid black;
+}
+
+.insta-icon img {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.insta-logo {
+    width: 100px;
+}
+
+.insta-logo img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.search-input-container {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 200px;
+}
+
+.search-input-container label {
+    color: lightgray;
+    width: 20%;
+}
+
+.search-input-container input {
+    width: 80%;
+}
+
+.icon-container {
+    font-size: 1.2rem;
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+}
