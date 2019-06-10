@@ -2,6 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faHeart, faComment, faBookmark, faShareSquare } from '@fortawesome/free-regular-svg-icons'
 import { faHeart as faSolidHeart } from '@fortawesome/free-solid-svg-icons';
+import "./PostContainer.css";
 
 class Footer extends React.Component {
     constructor(props) {
