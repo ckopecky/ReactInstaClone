@@ -2,6 +2,7 @@ import React from 'react';
 import PostHeader from './PostHeader';
 import Img from './Img';
 import Footer from './Footer';
+import "./PostContainer.css";
 
 const PostContainer = props => { 
     return (
