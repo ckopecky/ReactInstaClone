@@ -55,3 +55,15 @@
     justify-content: space-around;
     padding-right: 30px;
 }
+
+button {
+    width: 150px;
+    background-color: lightgray;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}

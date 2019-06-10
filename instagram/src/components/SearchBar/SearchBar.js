@@ -14,6 +14,9 @@ const SearchBar = (props) => {
             />
             <SearchInput filterPost={props.filterPost}/>
             <IconContainer />
+            <button onClick={props.toggle}>Log Out</button>
+            
+
         </div>
     );
 };

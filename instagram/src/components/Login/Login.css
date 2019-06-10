@@ -1,0 +1,57 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.login-input {
+    margin: 20px;
+}
+
+form a .login-button {
+    width: 150px;
+    background-color: lightgray;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+form p {
+    font-size: 12px;
+}
+
+form p a {
+    color: gray;
+    text-decoration: none;
+}
+
+.login {
+    font-size: 13px;
+}
+
+.login a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.download-from-app-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-from-app-store  #apple {
+    width: 150px;
+}
+
+.download-from-app-store  #google {
+    width: 185px;
+}
