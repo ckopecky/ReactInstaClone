@@ -5,9 +5,22 @@
     height: 70px;
 }
 
+@media screen and (max-width: 750px) {
+    .search-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 .logo-container {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+    .logo-container {
+        flex-direction: column;
+    }
 }
 
 
@@ -15,6 +28,12 @@
     width: 50px;
     margin: 30px;
     border-right: 1px solid black;
+}
+
+@media screen and (max-width: 750px) {
+    .insta-icon{
+        display: none;
+    }
 }
 
 .insta-icon img {
@@ -39,6 +58,12 @@
     width: 200px;
 }
 
+@media screen and (max-width: 750px) {
+    .search-input-container {
+        margin-bottom: 20px;
+    }
+}
+
 .search-input-container label {
     color: lightgray;
     width: 20%;
@@ -56,14 +81,26 @@
     padding-right: 30px;
 }
 
+@media screen and (max-width: 975px) {
+    .icon-container {
+        display: none;
+    }
+}
+
 button {
     width: 150px;
     background-color: lightgray;
     border-radius: 20px;
     height: 30px;
     margin-top: 20px;
-    margin: 0;
+    margin: 0 40px 0 0;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    button {
+        margin: 0;
+    }
 }
