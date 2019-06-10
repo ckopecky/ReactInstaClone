@@ -1,32 +1,47 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import CommentForm from './CommentForm';
+import "./comments.css";
 
 class CommentSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            comments: [],
+            text: ''
+        }
+    }
+
+    componentDidMount() {
+        this.setState({comments: this.props.comments});
+    }
+
+    addComment = (comment, user) => {
+        let newComment = { username: user, text: comment}
+        this.setState({comments: [...this.state.comments, newComment ]});
+
+    }
 
     render(){
     
         return (
             <div>
-                {this.props.comments.map(comment => {
+                {this.state.comments.map(comment => {
                     return (
-                        <div className="comment-box">
+                        <div key={comment.text} className="comment-box">
                             <p><strong>{comment.username}</strong></p>
                             <p>{comment.text}</p>
                             <p><FontAwesomeIcon icon={faHeart}/></p>
                         </div>
                     )
                 })}
-                <CommentForm />
+                <CommentForm 
+                    addComment={this.addComment}
+                />
             </div>
         );
     }
-};
-
-CommentSection.propTypes = {
-    
 };
 
 export default CommentSection;

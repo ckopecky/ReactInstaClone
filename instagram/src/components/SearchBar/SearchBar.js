@@ -5,15 +5,18 @@ import InstagramLogo from "../../assets/instagram_logo.jpg";
 import SearchInput from './SearchInput';
 import IconContainer from './IconContainer';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
     return (
         <div className="search-container">
             <InstaLogo 
                 icon={InstagramIcon}
                 logo={InstagramLogo}
             />
-            <SearchInput />
+            <SearchInput filterPost={props.filterPost}/>
             <IconContainer />
+            <button onClick={props.toggle}>Log Out</button>
+            
+
         </div>
     );
 };
