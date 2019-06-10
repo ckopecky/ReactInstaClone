@@ -17,15 +17,17 @@ class App extends React.Component {
     this.setState({dummydata})
   }
 
-  addComment = (comment, user) => {
-
+  filterPost = (searchTerm) => {
+    const filtered = this.state.dummydata.filter(item => {
+      return item.username === searchTerm;
+    })
+    this.setState({dummydata: filtered});
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar filterPost={this.filterPost}/>
 {this.state.dummydata.map(post => {
           return (
             <div key={post.username + post.likes} className="instagram-container">
@@ -37,7 +39,8 @@ class App extends React.Component {
                   numLikes={post.likes}
                   timestamp={post.timestamp}
                 />
-                <CommentSection   comments={post.comments}
+                <CommentSection   
+                  comments={post.comments}
                 />
               </div>
             </div>
