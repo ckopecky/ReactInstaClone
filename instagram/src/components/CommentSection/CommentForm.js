@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class CommentForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: '',
-            username: 'ckopecky1952'
+            username: 'ckopecky1952',
+            text: ''
         }
+    }
+
+    handleChanges = (event) => {
+        this.setState({[event.target.name] : event.target.value});
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.addComment(this.state.text, this.state.username);
+        this.setState({text: ''});
     }
     render() {
         return (
-            <form>
-                <input type="text" placeholder="Add a comment..."/>
+            <form onSubmit={this.handleSubmit}>
+                <input onChange={this.handleChanges} name="text" value={this.state.text}type="text" placeholder="Add a comment..."/>
                 <button>POST</button>
             </form>
         );
     }
 }
-
-CommentForm.propTypes = {
-
-};
 
 export default CommentForm;
