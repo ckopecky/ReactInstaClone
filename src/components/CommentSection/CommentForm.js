@@ -22,7 +22,7 @@ class CommentForm extends Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <input onChange={this.handleChanges} name="text" value={this.state.text}type="text" placeholder="Add a comment..."/>
-                <button>POST</button>
+                <button style={{backgroundColor: "transparent"}} id="post-button">POST</button>
             </form>
         );
     }
