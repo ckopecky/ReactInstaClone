@@ -17,6 +17,7 @@ form a .login-button {
     border-radius: 20px;
     height: 30px;
     margin-top: 20px;
+    margin-right: 0px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
