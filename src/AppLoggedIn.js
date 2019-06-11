@@ -3,6 +3,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 import CommentSection from './components/CommentSection/CommentSection';
 import dummydata from "./dummy-data";
+import "./App.css";
 
 
 class AppLoggedIn extends Component {
