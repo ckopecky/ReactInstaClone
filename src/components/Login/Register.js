@@ -33,7 +33,7 @@ class Register extends React.Component {
             <div className="login-container">
                     <h5>Log in to see photos and videos from your friends.</h5>
                     <div className="login-form" onSubmit={this.toggle}>
-                        <a href="./Login"><button className="login-button" onClick={this.props.toggle}>Log in</button></a>
+                        <button className="login-button" onClick={this.props.toggle}>Log in</button>
                         <p>By signing up you agree to our <a href="https://help.instagram.com/581066165581870">Terms</a>, <a href="https://help.instagram.com/519522125107875">Data Policy</a> and <a href="https://www.instagram.com/legal/cookies/">Cookies Policy</a></p>
                     </div>
                 <p>Get the app.</p>
