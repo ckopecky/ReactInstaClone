@@ -11,11 +11,14 @@ Client: [React-InstaClone](https://react-instaclone.netlify.com/)
 
 Clone specified mockups:
 
-**Search bar:** ![search bar](./src/assets/ig_search_bar.png)
+**Search bar:** 
 
-**Background:** #FAFAFA
+![search bar](./src/assets/ig_search_bar.png)
 
-**Post container:** ![insta post](./src/assets/ig_post.png)
+
+**Post container:** 
+
+![insta post](./src/assets/ig_post.png)
 
 Frontend Built Using:
 
